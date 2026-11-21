@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#220A63">
+  <meta name="description" content="Guía breve de ejercicios vocales de Musicala para practicar a diario.">
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <title>Vocaliza · Musicala</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <img src="./assets/logo-musicala.png" alt="Musicala">
+      <nav aria-label="Secciones">
+        <a href="#practica">Práctica diaria</a>
+        <a href="#biblioteca">Biblioteca <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="titulo">
+      <div class="intro-copy">
+        <h1 id="titulo">Vocaliza<span>.</span></h1>
+        <p>Prepara tu voz para cantar con cuatro ejercicios que puedes hacer a diario.</p>
+        <a class="start" href="#practica">Empezar la rutina <span aria-hidden="true">↓</span></a>
+      </div>
+      <img class="hero-photo" src="./assets/portada-vocaliza.jpg" alt="" fetchpriority="high" width="1536" height="1024">
+    </section>
+    <section id="practica" aria-labelledby="rutina-titulo">
+      <div class="section-heading">
+        <h2 id="rutina-titulo">Práctica diaria</h2>
+        <span>4 ejercicios · aprox. 5 min</span>
+      </div>
+      <ol id="rutina" class="routine"></ol>
+      <p class="section-copy">Descansa entre repeticiones y canta en una altura cómoda. Si aparece dolor o molestia, detente.</p>
+    </section>
+    <details id="biblioteca" class="library">
+      <summary>Biblioteca vocal <span>14 ejercicios</span></summary>
+      <div id="catalogo"></div>
+    </details>
+  </main>
+</body>
+</html>
